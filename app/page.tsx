@@ -1,4 +1,9 @@
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
-  return <div>milan</div>;
+  return (
+    <div>
+      <Button>bb</Button>
+    </div>
+  );
 }
