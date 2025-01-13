@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { Button } from "../button";
+import { Timeline, TimelineItem } from "../timeline";
+import { Check } from "lucide-react";
 
 export default function Hero() {
   return (
     <div className="flex flex-col space-y-20 p-20">
-      <div className="flex flex-col space-y-7 border justify-center items-center ">
+      <div className="flex flex-col space-y-7  justify-center items-center ">
         <div className="flex flex-col space-y-2 items-center text-5xl font-extrabold ">
           <div>Career inspiration, </div>
           <div className="flex space-x-4">
@@ -20,7 +22,31 @@ export default function Hero() {
           <div>Learn more</div>
         </div>
       </div>
-      <div className=" flex items-center justify-center">cards</div>
+      <div className=" flex items-center justify-center">
+        <Timeline>
+          <TimelineItem
+            date="2024-01-01"
+            title="Feature Released"
+            description="New timeline component is now available"
+            icon={<Check />}
+            status="completed"
+          />
+          <TimelineItem
+            date="2024-01-01"
+            title="Feature Released"
+            description="New timeline component is now available"
+            icon={<Check />}
+            status="completed"
+          />
+          <TimelineItem
+            date="2024-01-01"
+            title="Feature Released"
+            description="New timeline component is now available"
+            icon={<Check />}
+            status="completed"
+          />
+        </Timeline>
+      </div>
     </div>
   );
 }
