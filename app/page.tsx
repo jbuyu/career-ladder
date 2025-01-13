@@ -1,9 +1,11 @@
-import { Button } from "@/components/ui/button";
+import Hero from "@/components/ui/common/Hero";
+import Navbar from "@/components/ui/common/Navbar";
 
 export default function Home() {
   return (
-    <div>
-      <Button>bb</Button>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+    </>
   );
 }
